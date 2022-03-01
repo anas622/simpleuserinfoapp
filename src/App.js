@@ -1,24 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import FormField from './components/UI/FormField';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='container'>
+        <h1>User Information App</h1>
+          <form>
+            <FormField id={"username"} belongsTo={"username"} type={"input"} label="Username: "/>
+            <FormField id={"age"} belongsTo={"age"} type={"input"} label="Age: "/>
+          </form>
+    </section>
+    
   );
 }
 
