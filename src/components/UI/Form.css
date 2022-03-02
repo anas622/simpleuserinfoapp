@@ -1,0 +1,15 @@
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: white;
+    display: block;
+    margin: 0 auto;
+}
+
+input{
+    max-width: 10rem;
+    margin: 0 auto;
+}
